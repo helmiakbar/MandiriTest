@@ -1,0 +1,6 @@
+framework module Pods_MovieListMandiri_MovieListMandiriUITests {
+  umbrella header "Pods-MovieListMandiri-MovieListMandiriUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GenreListTableViewCell" rowHeight="67" id="KGk-i7-Jjw" customClass="GenreListTableViewCell" customModule="MovieListMandiri" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlj-CE-ASm">
+                        <rect key="frame" x="16" y="4" width="288" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-VO-ht2">
+                                <rect key="frame" x="16" y="16" width="220" height="23"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="8oy-c9-NXw">
+                                <rect key="frame" x="252" y="17.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CdY-La-xkb"/>
+                                    <constraint firstAttribute="width" constant="20" id="Oq7-Y6-ael"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8oy-c9-NXw" firstAttribute="centerY" secondItem="2qb-VO-ht2" secondAttribute="centerY" id="3EE-Gm-moj"/>
+                            <constraint firstItem="8oy-c9-NXw" firstAttribute="leading" secondItem="2qb-VO-ht2" secondAttribute="trailing" constant="16" id="hYW-AO-0zq"/>
+                            <constraint firstItem="2qb-VO-ht2" firstAttribute="top" secondItem="vlj-CE-ASm" secondAttribute="top" constant="16" id="kUn-fi-aWG"/>
+                            <constraint firstItem="2qb-VO-ht2" firstAttribute="leading" secondItem="vlj-CE-ASm" secondAttribute="leading" constant="16" id="ns1-4Q-3xN"/>
+                            <constraint firstAttribute="trailing" secondItem="8oy-c9-NXw" secondAttribute="trailing" constant="16" id="pGX-eG-C96"/>
+                            <constraint firstAttribute="bottom" secondItem="2qb-VO-ht2" secondAttribute="bottom" constant="16" id="tW3-me-hgH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vlj-CE-ASm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9fT-Dp-9la"/>
+                    <constraint firstAttribute="trailing" secondItem="vlj-CE-ASm" secondAttribute="trailing" constant="16" id="PT9-CM-NV3"/>
+                    <constraint firstAttribute="bottom" secondItem="vlj-CE-ASm" secondAttribute="bottom" constant="8" id="hJ0-XZ-ovp"/>
+                    <constraint firstItem="vlj-CE-ASm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="hcg-yc-ioz"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="genreNameContentView" destination="vlj-CE-ASm" id="AuP-Ph-o2O"/>
+                <outlet property="genreNameLabel" destination="2qb-VO-ht2" id="1hG-Xh-uaY"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="117.52232142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_chevron_right" width="12" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
